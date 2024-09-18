@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #0e0e0e; /* Dark background for a sci-fi feel */
+    color: #e0e0e0; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent dark background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Glowing effect */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glowing text effect */
+  }
+  
+  .timer {
+    font-size: 5rem;
+    margin: 20px 0;
+    letter-spacing: 1rem;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.9); /* Glowing effect */
+  }
+  
+  button {
+    background: linear-gradient(145deg, #00bfff, #1e90ff); /* Blue gradient background */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 255, 0.5); /* Button shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 255, 0.7);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Animation for timer numbers */
+  @keyframes timerPulse {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.6); }
+    100% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+  }
+  
+  .timer {
+    animation: timerPulse 1.5s infinite;
+  }
+  
